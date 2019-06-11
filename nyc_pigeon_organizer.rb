@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
     property_hash.each do |prop_spec, pigeon_array|
       pigeon_array.each do |pigeon|
         if pigeon_list.include?(pigeon)
-
+          pigeon_list[pigeon][property].push(prop_spec)
         else
           pigeon_list[pigeon] = {}
           pigeon_list[pigeon][property] = []
