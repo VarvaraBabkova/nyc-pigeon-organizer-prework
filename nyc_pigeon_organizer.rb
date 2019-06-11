@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
         else
           pigeon_list[pigeon] = {}
           pigeon_list[pigeon][property] = []
-          pigeon_list[pigeon][property][0] = prop_spec
+          pigeon_list[pigeon][property][0] = prop_spec.to_s
         end
       end
     end
